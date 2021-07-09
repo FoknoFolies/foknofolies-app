@@ -1,4 +1,4 @@
-package com.foknofolies;
+package com.foknofolies.app;
 
 import com.facebook.react.ReactActivity;
 import android.content.Intent;

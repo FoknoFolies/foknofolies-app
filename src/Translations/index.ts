@@ -1,8 +1,12 @@
-import i18n from 'i18next'
-import { initReactI18next } from 'react-i18next'
-import * as resources from './resources'
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import * as resources from './resources';
 
 i18n.use(initReactI18next).init({
+  defaultNS: undefined,
+  fallbackNS: false,
+  lng: 'fr',
+  ns: [],
   resources: {
     ...Object.entries(resources).reduce(
       (acc, [key, value]) => ({
@@ -14,7 +18,7 @@ i18n.use(initReactI18next).init({
       {},
     ),
   },
-  lng: 'en',
-})
+  supportedLngs: ['fr'],
+});
 
-export default i18n
+export default i18n;
