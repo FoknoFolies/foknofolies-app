@@ -12,17 +12,14 @@ import {
   REHYDRATE,
 } from 'redux-persist';
 import startup from './Startup';
-import theme from './Theme';
 
 const reducers = combineReducers({
   startup,
-  theme,
 });
 
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
-  whitelist: ['theme'],
 };
 
 const persistedReducer = persistReducer(persistConfig, reducers);
@@ -41,5 +38,8 @@ const store = configureStore({
 });
 
 const persistor = persistStore(store);
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
 
 export { store, persistor };

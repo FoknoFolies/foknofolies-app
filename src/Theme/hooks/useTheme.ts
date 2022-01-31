@@ -1,7 +1,7 @@
 import { useColorScheme } from 'react-native';
+import { ThemeState } from '@/Store/Theme';
 import { DarkTheme, DefaultTheme } from '@react-navigation/native';
 import { useSelector } from 'react-redux';
-import { ThemeState } from '@/Store/Theme';
 import Common from '@/Theme/Common';
 import Fonts from '@/Theme/Fonts';
 import Gutters from '@/Theme/Gutters';
@@ -22,9 +22,7 @@ export default function () {
   const colorScheme = useColorScheme();
 
   // Get current theme from the store
-  const currentTheme = useSelector(
-    (state: { theme: ThemeState }) => state.theme.theme || 'default',
-  );
+  const currentTheme = useSelector((state: { theme: ThemeState }) => 'default');
   const isDark = useSelector((state: { theme: ThemeState }) => state.theme.darkMode);
   const darkMode = isDark === null ? colorScheme === 'dark' : isDark;
   // Select the right theme light theme ({} if not exist)

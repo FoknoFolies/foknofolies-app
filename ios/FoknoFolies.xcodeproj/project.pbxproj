@@ -15,7 +15,7 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* FoknoFoliesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FoknoFoliesTests.m */; };
-		8374C753269D812E00FE99FD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8374C752269D812E00FE99FD /* File.swift */; };
+		83057D0F26D5595D00E701F5 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83057D0E26D5595D00E701F5 /* File.swift */; };
 		839464C12697439C006244CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839464C02697439C006244CF /* LaunchScreen.storyboard */; };
 		953BB314FACE35EA4AB9B861 /* libPods-FoknoFolies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED638B1C5E093B52314D61D2 /* libPods-FoknoFolies.a */; };
 		ED3F46AE904CC115E125DE8E /* libPods-FoknoFolies-FoknoFoliesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5349546157F276B0FB320E69 /* libPods-FoknoFolies-FoknoFoliesTests.a */; };
@@ -53,8 +53,8 @@
 		2D02E4901E0B4A5D006451C7 /* FoknoFolies-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FoknoFolies-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		515E1AFD6C48722EB6CF476A /* Pods-FoknoFolies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoknoFolies.debug.xcconfig"; path = "Target Support Files/Pods-FoknoFolies/Pods-FoknoFolies.debug.xcconfig"; sourceTree = "<group>"; };
 		5349546157F276B0FB320E69 /* libPods-FoknoFolies-FoknoFoliesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoknoFolies-FoknoFoliesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83057D0E26D5595D00E701F5 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		8374C751269D812E00FE99FD /* FoknoFolies-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoknoFolies-Bridging-Header.h"; sourceTree = "<group>"; };
-		8374C752269D812E00FE99FD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = File.swift; path = ../../../../../File.swift; sourceTree = "<group>"; };
 		839464C02697439C006244CF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A57308E762C2A36CD6138BEC /* Pods-FoknoFolies-FoknoFoliesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoknoFolies-FoknoFoliesTests.debug.xcconfig"; path = "Target Support Files/Pods-FoknoFolies-FoknoFoliesTests/Pods-FoknoFolies-FoknoFoliesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA557DD2787271DF5A36A9B0 /* Pods-FoknoFolies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoknoFolies.release.xcconfig"; path = "Target Support Files/Pods-FoknoFolies/Pods-FoknoFolies.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,8 +125,8 @@
 				839464C02697439C006244CF /* LaunchScreen.storyboard */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				8374C752269D812E00FE99FD /* File.swift */,
 				8374C751269D812E00FE99FD /* FoknoFolies-Bridging-Header.h */,
+				83057D0E26D5595D00E701F5 /* File.swift */,
 			);
 			name = FoknoFolies;
 			sourceTree = "<group>";
@@ -544,7 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				8374C753269D812E00FE99FD /* File.swift in Sources */,
+				83057D0F26D5595D00E701F5 /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,11 +10,11 @@ import './Translations';
 
 const App = () => (
   <Provider store={store}>
-    <StripeProvider publishableKey={Config.STRIPE_PUBLIC_KEY}>
-      <PersistGate loading={null} persistor={persistor}>
+    <PersistGate loading={null} persistor={persistor}>
+      <StripeProvider publishableKey={Config.STRIPE_PUBLIC_KEY}>
         <ApplicationNavigator />
-      </PersistGate>
-    </StripeProvider>
+      </StripeProvider>
+    </PersistGate>
   </Provider>
 );
 
